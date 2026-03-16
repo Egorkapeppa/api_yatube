@@ -8,4 +8,3 @@ class IsAuthorOrReadOnly(permissions.BasePermission):
             return True
         # на изменение/удаление — только автор
         return obj.author == request.user
-    
